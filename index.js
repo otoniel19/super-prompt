@@ -22,7 +22,7 @@ const loadHistory = (fileName) => {
 var prompter = readline.createInterface({
   input: stdin,
   output: stdout,
-  historySize: 1000
+  historySize: Infinity
 });
 
 if (stdin.isTTY) stdin.setRawMode(true);
