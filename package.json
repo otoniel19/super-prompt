@@ -1,6 +1,6 @@
 {
   "name": "@otoniel19/super-prompt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "super-prompt ask prompts on terminal listen keypress and more...",
   "main": "index.js",
   "repository": "https://github.com/otoniel19/super-prompt",
