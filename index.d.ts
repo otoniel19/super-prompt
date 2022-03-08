@@ -1,6 +1,5 @@
-/// <reference types="node" />
 export = SuperPrompt;
-declare class SuperPrompt extends EventEmitter {
+declare class SuperPrompt {
     /**
      * @param {String} historyFile the file to save the history
      */
@@ -13,6 +12,7 @@ declare class SuperPrompt extends EventEmitter {
         close: boolean;
         persist: boolean;
     };
+    on(event: any, cb: any): void;
     /**
      * @param {String} name the question name to ask
      * ```js
@@ -26,12 +26,10 @@ declare class SuperPrompt extends EventEmitter {
      * the SuperPrompt readline
      * @returns {typeof readline}
      */
-    get readline(): typeof readline;
+    get readline(): any;
     /**
      * the SuperPrompt interface
      * @returns {typeof prompter}
      */
-    get interface(): readline.Interface;
+    get interface(): any;
 }
-import { EventEmitter } from "events";
-import readline = require("readline");
